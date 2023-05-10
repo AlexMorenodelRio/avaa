@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="keywords" content="Arganda
+Calendario
+Eventos">
+<title>Calendario</title>
+<link href="global.css" rel="stylesheet" type="text/css">
+<link href="calendario.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<!--Header starts //-->
+	<header class="header">
+     <nav>
+	    <ul>
+		    <li><a href="index.html">Inicio</a></li>
+		    <li><a href="SobreNosotros.html">Sobre nosotros</a></li>
+		    <li><a href="Vecinos.html">Vecinos</a></li>
+		    <li><a href="Tiendas.html">Tiendas amigas</a></li>
+	    </ul>
+	  </nav>
+	</header>
+	<!--Header ends //-->
+	
+	<div>
+	<h2 class="h2">Calendario de eventos</h2>
+	<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="img/Abril2023cal.jpg" style="width:100%" alt="April calendar with the events that are taking place">
+</div>
+
+<div class="mySlides fade">
+  <img src="img/mayo2023cal.jpg" style="width:100%" alt="May calendar with the events that are taking place">
+</div>
+
+<div class="mySlides fade">
+  <img src="img/Junio2023cal.jpg" style="width:100%" alt="June calendar with the events that are taking place">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+	</div>
+</body>
+</html>

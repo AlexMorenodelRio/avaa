@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="keywords" content="Arganda
+Vecinos
+Eventos
+Articulos">
+<title>Consumo</title>
+<link href="global.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<!--Wrapper starts //-->
+<div class="wrapper">
+	<!--Header starts //-->
+	<header class="header">
+     <nav>
+	    <ul>
+		    <li><a href="Calendario1.html">Calendario</a></li>
+		    <li><a href="SobreNosotros.html">Sobre nosotros</a></li>
+		    <li><a href="Vecinos.html">Vecinos</a></li>
+		    <li><a href="Tiendas.html">Tiendas amigas</a></li>
+	    </ul>
+	  </nav>
+	</header>
+	<!--Header ends //-->
+	
+  <!--Sidebar starts //-->
+<div class="sidebar">
+	<!--Searchbar starts //-->
+	<div class="topnav">
+  <input type="text" placeholder="Buscar...">
+</div>
+	<!--Searchbar ends //-->
+	
+	<!--Categories starts //-->
+  <a class="active" href="InformacionLocal.html">Información local</a>
+  <a href="Consumo.html" class="active">Consumo</a>
+  <a href="Educacion.html" class="active">Educación</a>
+  <a href="Ocio.html" class="active">Ocio</a>
+  <a class="active" href="Cultura.html">Cultura</a>
+  <a href="Salud.html" class="active">Salud</a>
+  <a href="Solidaridad.html" class="active">Solidaridad</a>
+  <a href="Recortes.html" class="active">Recortes</a>
+	<!--Categories ends //-->
+	
+	<!--Dropdown starts //-->
+	<div class="dropdown">
+  <button class="dropbtn">Archivos</button>
+  <div class="dropdown-content">
+    <a href="2015.html">2015</a>
+    <a href="2014.html">2014</a>
+    <a href="2013.html">2013</a>
+	<a href="2012.html">2012</a>
+    <a href="2011.html">2011</a>
+  </div>
+		<!--Dropdown ends //-->
+</div>
+</div>
+     <div class="barra">&nbsp;</div>
+	<!--Articles starts //-->
+  <div class="articles">
+	<h1 class="h1">Resultados II Gala Solidaria</h1>
+	<h6 class="autores">Publicado en el 9 Marzo, 2014</h6>
+	<p>Desde la Asociación de Vecinos de Arganda queremos dar las gracias por la fantástica respuesta de los vecinos de nuestro municipio a la II Gala Solidaria en favor de Cáritas y Cruz Roja.877 kilos de alimentos y productos de higiene fueron recogidos in situ ese mismo día más la donación de 520 productos de higiene por parte de Mercadona.Gracias a todos y por su puesto a todos los grandes artistas que nos acompañaron y que nos hicieron pasar una tarde fantástica obsequiándonos con su magnífico trabajo y su solidaridad…</p>
+	<h3>A todos ¡GRACIAS 1377!</h3>
+	<!--Images II Gala starts //-->
+	<div class="slideshow-container">
+	<div class="mySlides fade">
+  	<div class="numbertext">1 / 4</div>
+  	<img src="img/II_Gala1.jpg" style="width:100%" alt="People from a music group vowing">
+	</div>
+	<div class="mySlides fade">
+ 	<div class="numbertext">2 / 4</div>
+  	<img src="img/II_Gala2.jpg" style="width:100%" alt="Charity people organising the things that were donated">
+	</div>
+	<div class="mySlides fade">
+  	<div class="numbertext">3 / 4</div>
+  	<img src="img/II_Gala3.jpg" style="width:100%" alt="Charity people with tables looking at what is donated">
+	</div>
+	<div class="mySlides fade">
+  	<div class="numbertext">4 / 4</div>
+  	<img src="img/II_Gala4.jpg" style="width:100%" alt="Two musicians">
+	</div>
+	<a class="prev" onclick="plusSlides(-1)">❮</a>
+	<a class="next" onclick="plusSlides(1)">❯</a>
+	</div>
+	<br>
+	<div style="text-align:center">
+ 	<span class="dot" onclick="currentSlide(1)"></span> 
+ 	<span class="dot" onclick="currentSlide(2)"></span> 
+  	<span class="dot" onclick="currentSlide(3)"></span>
+  	<span class="dot" onclick="currentSlide(4)"></span>
+	</div>
+	<script>
+		let slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+  		showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+  		showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+  		let i;
+  		let slides = document.getElementsByClassName("mySlides");
+  		let dots = document.getElementsByClassName("dot");
+  		if (n > slides.length) {slideIndex = 1}    
+  		if (n < 1) {slideIndex = slides.length}
+  		for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";  
+		}
+  		for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" active", "");
+  		}
+  		slides[slideIndex-1].style.display = "block";  
+  		dots[slideIndex-1].className += " active";
+		}
+</script>
+	  <h1 class="h1">CHARLA RECORTES SERVICIOS MUNICIPALES MARTES 10/12/2013 A LAS 18.30 HORAS CENTRO CULTURAL PILAR MIRÓ</h1>
+	<h6 class="autores">Publicado en el 10 Diciembre, 2013</h6>
+	<p>Buenas tardes a todos, el Martes 10 de Diciembre a las 18.30 en el Centro Cultural Miró os invitamos a que acudáis a una charla informativa de la negativa repercusión que tendrá de aprobarse la Reforma de Ley de Bases de Régimen Local para los servicios públicos de nuestro municipio. Esta charla está promovida por la Plataforma en Defensa de los Servicios Públicos de Arganda del Rey de la que AVA es miembro.</p><p>La aprobación de la reforma supondrá la desaparición en Arganda de los siguientes servicios:</p><p> Educación infantil: Escuela Infantil Municipal,  Casita de Niños (Poveda) y auxiliares municipales de apoyo en Educación Infantil.
+      Promoción y Educación para la Salud (desayunos saludables, inspección y control de establecimientos, control de plagas, legionela y aguas).
+      CAID: centro integral de apoyo a la drogodependencia.
+      Información al consumidor y mediación en sus reclamaciones.
+      Seguimientos de redes de alerta (retirada de productos defectuosos).
+      Servicios de atención domiciliaria (ayuda a domicilio, mejora de habitabilidad y comida a domicilio).
+      Promoción de la autonomía personal: asesoría jurídica, apoyo a mayores, atención a menores víctima de violencia familiar y mediación familiar.
+      Emergencia social: ayudas económicas a las familias.
+      Prevención, inserción y promoción social: servicios de ocio para personas con discapacidad, escuelas de madres y padres, apoyo a familias de cuidadores dependientes.
+	  Programas de atención al menor</p><p>Y esto se debe a que Se está promoviendo la Reforma de la Ley de Bases de Régimen Local, y con ella se pretende la reforma de la Administración local eliminando servicios que durante años se han prestado a los vecinos y vecinas desde su propio municipio, sacándolos del ámbito local  y trasladándolos, los que no se eliminen, al autonómico (si bien ya las Comunidades se encuentran ya colapsadas y difícilmente asumirán estos servicios y a sus usuarios) y por tanto si se prestan serán fuera de la localidad, o poniéndolos en manos de gestión privada, lo que además de un coste implicará una perdida en la calidad del servicio.</p><p>Para OBTENER MÁS INFORMACIÓN E IMPLICARTE EN PARAR DICHA REFORMA ACUDE A LA CHARLA MAÑANA MARTES 10 Diciembre  A LAS 18.30 EN EL CC PILAR MIRÓ a cargo de profesionales de los servicios municipales de Arganda que pretender ser eliminados que responderán todas las dudas.</p><p>Mónica G Crespo Presidenta AVA</p>
+    <img src="img/CharlasRecortes.jpg" width="630" height="420" alt="Information about the charla"/>
+	 <h1 class="h1">Mercadillo Solidario</h1>
+	<h6 class="autores">Publicado en el 30 Noviembre, 2012</h6>
+	<p>Os recordamos que este domingo a las 12 horas AVA participará en el mercadillo solidario que se llevará a cabo en el Paseo de la Misericordia dentro de los actos de la “Semana del Asociacionismo y el Voluntariado”.</p><p>Os invitamos a acudir, ya que ponemos a la venta juguetes, libros, velas, ropa… y muchos artículos más de primera mano o prácticamente nuevos a precios de crisis, donados por nuestros asociados, y la recaudación se donará para la adquisición de juguetes que se entregarán a los menores más desfavorecidos de nuestra localidad.</p><p>Podéis adquirir artículos de cara a navidad a muy buen precio además de colaborar con una excelente causa.</p><p>¡Contamos con vosotros!</p>
+	<img src="img/MercadilloSolidario.png" width="630" height="420" alt="Mercadillo Solidario Flyer"/>
+	  <h1 class="h1">Plataforma contra la Privatización del Canal de Isabel II</h1>
+	<h6 class="autores">Publicado en el 6 Octubre, 2011</h6>
+	<p>Como ya os adelantamos este VIERNES 7 DE OCTUBRE a partir de las 19 horas en el Centro Cultural PILAR MIRÓ de Arganda del Rey, la Plataforma contra la Privatización del Canal de Isabel II realizará un acto informativo sobre esta materia, cuyo cartel os adjuntamos, en colaboración con Ecologistas en Acción y la Asociación de Vecinos de Arganda. NO FALTÉIS OS ESPERAMOS</p>
+	<img src="img/PlataformaCanal.png" width="287" height="403" alt="Flyer of the platform"/>
+	</div>
+	</div>
+</body>
+</html>
